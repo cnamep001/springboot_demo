@@ -1,0 +1,19 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+  datasource:
+    url: jdbc:mysql://localhost:3306/ordering?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  #  type-aliases-package: com.m.entity
+server:
+  port: 8080
+logging:
+  file: D:/idea日志/springboot1.log
+  pattern:
+    file: "%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n"
+    console: "%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %clr(%logger){cyan} %clr(%msg%n){green}"

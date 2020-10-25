@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.m.dao.UserDao">
+
+    <select id="login" resultType="com.m.entity.User">
+        select * from t_user
+        where username = #{param1}
+        and password = #{param2}
+        and is_delete = 1
+    </select>
+
+    <select id="findAll" resultType="com.m.entity.User">
+        select * from t_user
+        where is_delete = 1
+        order by id <!--desc/asc-->
+        limit #{param1},#{param2};
+
+    </select>
+
+    <select id="update">
+        update t_user set
+        username = #{username},
+        password = #{password},
+        nickname = #{nickname},
+        telephone = #{telephone},
+        address = #{address}
+        where id = #{id}
+    </select>
+    <insert id="save" parameterType="com.m.entity.User">
+        insert into t_user(username,password,nickname,gender,telephone,registerdate,address,is_delete)
+        values(#{username},#{password},#{nickname},#{gender},#{telephone},#{registerdate},#{address},#{is_delete})
+    </insert>
+
+    <delete id="deleteById" parameterType="long">
+        update t_user
+        set is_delete = 0
+        where id = #{id};
+    </delete>
+
+    <select id="findOrderById" resultType="com.m.entity.Order">
+        <!--*修改为id-->
+        select id from t_order
+        where uid = #{param1}
+        and is_delete = 1
+    </select>
+
+</mapper>

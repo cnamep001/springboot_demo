@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.m.dao.AdminDao">
+
+    <select id="login" resultType="com.m.entity.Admin">
+        select * from t_admin where username = #{param1} and password = #{param2}
+    </select>
+
+</mapper>
