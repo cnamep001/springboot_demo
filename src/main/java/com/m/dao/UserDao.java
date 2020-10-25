@@ -14,5 +14,5 @@ public interface UserDao {
     public void update(User user);
 
     public void deleteById(long id);
-    public Order findOrderById(long uid);
+    public List<Order> findOrderById(long uid);
 }

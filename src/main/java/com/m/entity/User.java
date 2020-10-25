@@ -3,7 +3,7 @@ package com.m.entity;
 
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class User{
@@ -13,7 +13,7 @@ public class User{
     private String nickname;
     private String gender;
     private String telephone;
-    private Date registerdate;
+    private LocalDateTime registerdate;
     private String address;
     private int is_delete;
 

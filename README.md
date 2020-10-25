@@ -1,3 +1,5 @@
+### 编程环境:IDEA2018.2
+
 ### 项目概述
 
 首先来了解项目需求。
@@ -20,6 +22,12 @@
 - user 
     - 提供用户服务：添加用户、查询用户、删除用户、用户修改。
     
+- org.apache.ibatis.exceptions.TooManyResultsException
+    - 这个异常报了两次，对象转集合。
+    
+- jdbc连接的时区要设置
+    serverTimezone=GMT%2B8    
+    
 ```    
     //index.html改成user_main.html
     //main.html 改成admin_main.html
@@ -41,10 +49,19 @@
             where state = #{state}
             and  is_delete = 1
         </select>
+       
 ``` 
-    
+
 //1、不删数据
 //2、分表分库   ->   过亿
 //3、数据仓库
 
 //sql语句的优化
+
+echo "# springboot_demo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/cnamep001/springboot_demo.git
+git push -u origin main

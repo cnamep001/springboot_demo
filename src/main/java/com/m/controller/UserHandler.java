@@ -3,6 +3,7 @@ package com.m.controller;
 
 import com.m.dao.OrderDao;
 import com.m.dao.UserDao;
+import com.m.entity.Order;
 import com.m.entity.User;
 import com.m.entity.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class UserHandler {
     @RequestMapping("/save")
     //Post请求
     public String save(User user){
-        user.setRegisterdate(new Date());
+        user.setRegisterdate(LocalDateTime.now());
         user.setIs_delete(1);
         userRepository.save(user);
         return "user_manage";
@@ -60,15 +61,16 @@ public class UserHandler {
      * 如果要删这个用户，那么跟这个用户相关的订单也有删除
      *      order
      */
+
     @RequestMapping("/deleteById/{id}")
     public String deleteById(@PathVariable("id") long id){
         //先删用户订单，再删用户
-        if(userRepository.findOrderById(id) == null) {
+        List<Order> orders = userRepository.findOrderById(id);
+        if(orders.isEmpty()) {
             orderDao.deleteByUid(id);
             userRepository.deleteById(id);
             return "user_manage";
         }
-        System.out.println(LocalDateTime.now());
         return "user_manage";
     }
 }

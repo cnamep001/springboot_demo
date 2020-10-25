@@ -42,9 +42,11 @@
 
     <select id="findOrderById" resultType="com.m.entity.Order">
         <!--*修改为id-->
+        <!--未删除未派送-->
         select id from t_order
         where uid = #{param1}
         and is_delete = 1
+        and state = 0
     </select>
 
 </mapper>
