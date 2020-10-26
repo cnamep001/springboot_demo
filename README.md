@@ -108,17 +108,23 @@ Mapped Statements collection already contains value for com.m.dao.AdminDao.login
        
 ``` 
 
+```
+
 //1、不删数据
 //2、分表分库   ->   过亿
 //3、数据仓库
 
 //sql语句的优化
 
+```
+
+
 
 
 
 ## github
 
+```
 echo "# springboot_demo" >> README.md
 git init
 git add README.md
@@ -126,3 +132,5 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/cnamep001/springboot_demo.git
 git push -u origin main
+
+```
