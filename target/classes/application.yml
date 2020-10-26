@@ -13,7 +13,7 @@ mybatis:
 server:
   port: 8080
 logging:
-  file: D:/idea日志/springboot2.log
+  file: "C:/Users/GUSHI/IdeaProjects/spring3/log/springboot-10-26.log"
   pattern:
     file: "%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n"
     console: "%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %clr(%logger){cyan} %clr(%msg%n){green}"

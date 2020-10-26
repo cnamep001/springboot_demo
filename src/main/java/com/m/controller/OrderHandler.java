@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Controller
@@ -24,7 +25,7 @@ public class OrderHandler {
         menu.setId(mid);
         order.setUser(user);
         order.setMenu(menu);
-        order.setDate(new Date());
+        order.setDate(LocalDateTime.now());
         orderRepository.save(order);
         return "user_main";
     }

@@ -22,12 +22,68 @@
 - user 
     - 提供用户服务：添加用户、查询用户、删除用户、用户修改。
     
+
+
+
+## 异常    
+
+
+- org.springframework.beans.factory.UnsatisfiedDependencyException
+不满足依赖异常
+- org.springframework.beans.factory.BeanCreationException
+- org.springframework.beans.BeanInstantiationException
+- org.springframework.core.NestedIOException
+- org.apache.ibatis.builder.BuilderException
+- java.lang.IllegalArgumentException
+```
+Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; 
+
+nested exception is org.springframework.beans.factory.BeanCreationException:
+ Error creating bean with name 'sqlSessionFactory' defined in class path resource 
+    
+[org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: 
+Bean instantiation via factory method failed; 
+nested exception is org.springframework.beans.BeanInstantiationException: 
+
+Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: 
+
+Factory method 'sqlSessionFactory' threw exception; 
+nested exception is org.springframework.core.NestedIOException: 
+Failed to parse mapping resource: 
+'file [C:\Users\GUSHI\IdeaProjects\springboot2\target\classes\mapping\UserRepository.xml]'; 
+
+nested exception is org.apache.ibatis.builder.BuilderException: 
+Error parsing Mapper XML. Cause: java.lang.IllegalArgumentException: 
+Mapped Statements collection already contains value for com.m.dao.AdminDao.login
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType
+	(AbstractAutowireCapableBeanFactory.java:1431)
+
+```
 - org.apache.ibatis.exceptions.TooManyResultsException
     - 这个异常报了两次，对象转集合。
     
 - jdbc连接的时区要设置
     serverTimezone=GMT%2B8    
+
+1、http://localhost:8080/account/redirect/index    status=500
+
+- org.thymeleaf.exceptions.TemplateInputException
     
+
+> 常见的错误状态码
+
+404：资源找不到，你要检查 url 是否拼写正确。
+
+405：请求类型不匹配，只能接收 POST，你发送的是 GET。
+
+400：参数不匹配，检查 URL 的传参。
+
+500：代码中抛出异常，逻辑代码的问题。    
+
+
+
+## 小记录,优化思路
+
 ```    
     //index.html改成user_main.html
     //main.html 改成admin_main.html
@@ -57,6 +113,11 @@
 //3、数据仓库
 
 //sql语句的优化
+
+
+
+
+## github
 
 echo "# springboot_demo" >> README.md
 git init

@@ -1,0 +1,259 @@
+2020/10/25-22:22 [main] INFO  com.m.ServerApplication- Starting ServerApplication on DESKTOP-88544KO with PID 14528 (C:\Users\GUSHI\IdeaProjects\spring3\target\classes started by GUSHI in C:\Users\GUSHI\IdeaProjects\spring3)
+2020/10/25-22:22 [main] INFO  com.m.ServerApplication- No active profile set, falling back to default profiles: default
+2020/10/25-22:22 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a2d131d: startup date [Sun Oct 25 22:22:59 CST 2020]; root of context hierarchy
+2020/10/25-22:23 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2020/10/25-22:23 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/10/25-22:23 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.35
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\meaven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files (x86)\Rational\common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\GUSHI\AppData\Local\Microsoft\WindowsApps;;C:\Users\GUSHI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\GUSHI\AppData\Roaming\npm;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Users\GUSHI\AppData\Local\Pandoc\;.]
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 9094 ms
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/10/25-22:23 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a2d131d: startup date [Sun Oct 25 22:22:59 CST 2020]; root of context hierarchy
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/redirect/{target}]}" onto public java.lang.String com.m.controller.AccountHandler.redirect(java.lang.String)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/logout],methods=[GET]}" onto public java.lang.String com.m.controller.AccountHandler.logout(javax.servlet.http.HttpSession)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/login],methods=[POST]}" onto public java.lang.String com.m.controller.AccountHandler.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/update],methods=[POST]}" onto public java.lang.String com.m.controller.MenuHandler.update(com.m.entity.Menu)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/save]}" onto public java.lang.String com.m.controller.MenuHandler.save(com.m.entity.Menu)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllMenu]}" onto public com.m.entity.MenuVO com.m.controller.MenuHandler.findAll(int,int)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllType]}" onto public java.lang.String com.m.controller.MenuHandler.findAll(org.springframework.ui.Model)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findById/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.m.controller.MenuHandler.findById(long)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/deleteById/{id}]}" onto public java.lang.String com.m.controller.MenuHandler.deleteById(long)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/save/{mid}],methods=[GET]}" onto public java.lang.String com.m.controller.OrderHandler.save(long,javax.servlet.http.HttpSession)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/updateState/{id}/{state}]}" onto public java.lang.String com.m.controller.OrderHandler.updateState(long,int,javax.servlet.http.HttpSession)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByState]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByState(int,int)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByMid/{mid}]}" onto public void com.m.controller.OrderHandler.deleteByMid(long)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByUid/{uid}]}" onto public void com.m.controller.OrderHandler.deleteByUid(long)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByUid]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByUid(int,int,javax.servlet.http.HttpSession)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/update]}" onto public java.lang.String com.m.controller.UserHandler.update(com.m.entity.User)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/save]}" onto public java.lang.String com.m.controller.UserHandler.save(com.m.entity.User)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/findAll]}" onto public com.m.entity.UserVO com.m.controller.UserHandler.findAll(int,int)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/deleteById/{id}]}" onto public java.lang.String com.m.controller.UserHandler.deleteById(long)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:23 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:23 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2020/10/25-22:23 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2020/10/25-22:23 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020/10/25-22:23 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2020/10/25-22:23 [main] INFO  com.m.ServerApplication- Started ServerApplication in 20.727 seconds (JVM running for 25.719)
+2020/10/25-22:23 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/10/25-22:23 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2020/10/25-22:23 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 151 ms
+2020/10/25-22:23 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/10/25-22:23 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/10/25-22:23 [http-nio-8080-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2] with root cause
+org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy61.findOrderById(Unknown Source)
+	at com.m.controller.UserHandler.deleteById(UserHandler.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020/10/25-22:37 [main] INFO  com.m.ServerApplication- Starting ServerApplication on DESKTOP-88544KO with PID 2608 (C:\Users\GUSHI\IdeaProjects\spring3\target\classes started by GUSHI in C:\Users\GUSHI\IdeaProjects\spring3)
+2020/10/25-22:37 [main] INFO  com.m.ServerApplication- No active profile set, falling back to default profiles: default
+2020/10/25-22:37 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19e4fcac: startup date [Sun Oct 25 22:37:23 CST 2020]; root of context hierarchy
+2020/10/25-22:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2020/10/25-22:37 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/10/25-22:37 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.35
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\meaven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files (x86)\Rational\common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\GUSHI\AppData\Local\Microsoft\WindowsApps;;C:\Users\GUSHI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\GUSHI\AppData\Roaming\npm;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Users\GUSHI\AppData\Local\Pandoc\;.]
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 9582 ms
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/10/25-22:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19e4fcac: startup date [Sun Oct 25 22:37:23 CST 2020]; root of context hierarchy
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/redirect/{target}]}" onto public java.lang.String com.m.controller.AccountHandler.redirect(java.lang.String)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/login],methods=[POST]}" onto public java.lang.String com.m.controller.AccountHandler.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/logout],methods=[GET]}" onto public java.lang.String com.m.controller.AccountHandler.logout(javax.servlet.http.HttpSession)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/update],methods=[POST]}" onto public java.lang.String com.m.controller.MenuHandler.update(com.m.entity.Menu)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/save]}" onto public java.lang.String com.m.controller.MenuHandler.save(com.m.entity.Menu)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllMenu]}" onto public com.m.entity.MenuVO com.m.controller.MenuHandler.findAll(int,int)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllType]}" onto public java.lang.String com.m.controller.MenuHandler.findAll(org.springframework.ui.Model)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findById/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.m.controller.MenuHandler.findById(long)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/deleteById/{id}]}" onto public java.lang.String com.m.controller.MenuHandler.deleteById(long)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/save/{mid}],methods=[GET]}" onto public java.lang.String com.m.controller.OrderHandler.save(long,javax.servlet.http.HttpSession)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/updateState/{id}/{state}]}" onto public java.lang.String com.m.controller.OrderHandler.updateState(long,int,javax.servlet.http.HttpSession)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByState]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByState(int,int)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByUid]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByUid(int,int,javax.servlet.http.HttpSession)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByUid/{uid}]}" onto public void com.m.controller.OrderHandler.deleteByUid(long)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByMid/{mid}]}" onto public void com.m.controller.OrderHandler.deleteByMid(long)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/update]}" onto public java.lang.String com.m.controller.UserHandler.update(com.m.entity.User)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/save]}" onto public java.lang.String com.m.controller.UserHandler.save(com.m.entity.User)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/findAll]}" onto public com.m.entity.UserVO com.m.controller.UserHandler.findAll(int,int)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/deleteById/{id}]}" onto public java.lang.String com.m.controller.UserHandler.deleteById(long)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:37 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2020/10/25-22:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2020/10/25-22:37 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020/10/25-22:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2020/10/25-22:37 [main] INFO  com.m.ServerApplication- Started ServerApplication in 20.232 seconds (JVM running for 26.839)
+2020/10/25-22:38 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/10/25-22:38 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2020/10/25-22:38 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 122 ms
+2020/10/25-22:38 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/10/25-22:38 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/10/25-22:46 [main] INFO  com.m.ServerApplication- Starting ServerApplication on DESKTOP-88544KO with PID 12456 (C:\Users\GUSHI\IdeaProjects\spring3\target\classes started by GUSHI in C:\Users\GUSHI\IdeaProjects\spring3)
+2020/10/25-22:46 [main] INFO  com.m.ServerApplication- No active profile set, falling back to default profiles: default
+2020/10/25-22:46 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7776ab: startup date [Sun Oct 25 22:46:52 CST 2020]; root of context hierarchy
+2020/10/25-22:47 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2020/10/25-22:47 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/10/25-22:47 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.35
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\meaven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files (x86)\Rational\common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\GUSHI\AppData\Local\Microsoft\WindowsApps;;C:\Users\GUSHI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\GUSHI\AppData\Roaming\npm;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Users\GUSHI\AppData\Local\Pandoc\;.]
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 8925 ms
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/10/25-22:47 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7776ab: startup date [Sun Oct 25 22:46:52 CST 2020]; root of context hierarchy
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/redirect/{target}]}" onto public java.lang.String com.m.controller.AccountHandler.redirect(java.lang.String)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/login],methods=[POST]}" onto public java.lang.String com.m.controller.AccountHandler.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/logout],methods=[GET]}" onto public java.lang.String com.m.controller.AccountHandler.logout(javax.servlet.http.HttpSession)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/update],methods=[POST]}" onto public java.lang.String com.m.controller.MenuHandler.update(com.m.entity.Menu)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/save]}" onto public java.lang.String com.m.controller.MenuHandler.save(com.m.entity.Menu)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllMenu]}" onto public com.m.entity.MenuVO com.m.controller.MenuHandler.findAll(int,int)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllType]}" onto public java.lang.String com.m.controller.MenuHandler.findAll(org.springframework.ui.Model)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findById/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.m.controller.MenuHandler.findById(long)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/deleteById/{id}]}" onto public java.lang.String com.m.controller.MenuHandler.deleteById(long)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/save/{mid}],methods=[GET]}" onto public java.lang.String com.m.controller.OrderHandler.save(long,javax.servlet.http.HttpSession)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/updateState/{id}/{state}]}" onto public java.lang.String com.m.controller.OrderHandler.updateState(long,int,javax.servlet.http.HttpSession)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByUid]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByUid(int,int,javax.servlet.http.HttpSession)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByUid/{uid}]}" onto public void com.m.controller.OrderHandler.deleteByUid(long)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByMid/{mid}]}" onto public void com.m.controller.OrderHandler.deleteByMid(long)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByState]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByState(int,int)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/update]}" onto public java.lang.String com.m.controller.UserHandler.update(com.m.entity.User)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/save]}" onto public java.lang.String com.m.controller.UserHandler.save(com.m.entity.User)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/findAll]}" onto public com.m.entity.UserVO com.m.controller.UserHandler.findAll(int,int)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/deleteById/{id}]}" onto public java.lang.String com.m.controller.UserHandler.deleteById(long)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:47 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:47 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2020/10/25-22:47 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2020/10/25-22:47 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020/10/25-22:47 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2020/10/25-22:47 [main] INFO  com.m.ServerApplication- Started ServerApplication in 19.746 seconds (JVM running for 29.073)
+2020/10/25-22:48 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/10/25-22:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2020/10/25-22:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 89 ms
+2020/10/25-22:48 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/10/25-22:48 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/10/25-22:49 [main] INFO  com.m.ServerApplication- Starting ServerApplication on DESKTOP-88544KO with PID 13744 (C:\Users\GUSHI\IdeaProjects\spring3\target\classes started by GUSHI in C:\Users\GUSHI\IdeaProjects\spring3)
+2020/10/25-22:49 [main] INFO  com.m.ServerApplication- No active profile set, falling back to default profiles: default
+2020/10/25-22:49 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16414e40: startup date [Sun Oct 25 22:49:31 CST 2020]; root of context hierarchy
+2020/10/25-22:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2020/10/25-22:49 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/10/25-22:49 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.35
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\meaven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files (x86)\Rational\common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\GUSHI\AppData\Local\Microsoft\WindowsApps;;C:\Users\GUSHI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\GUSHI\AppData\Roaming\npm;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Users\GUSHI\AppData\Local\Pandoc\;.]
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 9237 ms
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/10/25-22:49 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16414e40: startup date [Sun Oct 25 22:49:31 CST 2020]; root of context hierarchy
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/login],methods=[POST]}" onto public java.lang.String com.m.controller.AccountHandler.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/logout],methods=[GET]}" onto public java.lang.String com.m.controller.AccountHandler.logout(javax.servlet.http.HttpSession)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/account/redirect/{target}]}" onto public java.lang.String com.m.controller.AccountHandler.redirect(java.lang.String)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/update],methods=[POST]}" onto public java.lang.String com.m.controller.MenuHandler.update(com.m.entity.Menu)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/save]}" onto public java.lang.String com.m.controller.MenuHandler.save(com.m.entity.Menu)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findById/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.m.controller.MenuHandler.findById(long)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/deleteById/{id}]}" onto public java.lang.String com.m.controller.MenuHandler.deleteById(long)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllType]}" onto public java.lang.String com.m.controller.MenuHandler.findAll(org.springframework.ui.Model)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/menu/findAllMenu]}" onto public com.m.entity.MenuVO com.m.controller.MenuHandler.findAll(int,int)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/save/{mid}],methods=[GET]}" onto public java.lang.String com.m.controller.OrderHandler.save(long,javax.servlet.http.HttpSession)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/updateState/{id}/{state}]}" onto public java.lang.String com.m.controller.OrderHandler.updateState(long,int,javax.servlet.http.HttpSession)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByUid]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByUid(int,int,javax.servlet.http.HttpSession)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByUid/{uid}]}" onto public void com.m.controller.OrderHandler.deleteByUid(long)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/findAllByState]}" onto public com.m.entity.OrderVO com.m.controller.OrderHandler.findAllByState(int,int)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/order/deleteByMid/{mid}]}" onto public void com.m.controller.OrderHandler.deleteByMid(long)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/update]}" onto public java.lang.String com.m.controller.UserHandler.update(com.m.entity.User)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/save]}" onto public java.lang.String com.m.controller.UserHandler.save(com.m.entity.User)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/deleteById/{id}]}" onto public java.lang.String com.m.controller.UserHandler.deleteById(long)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/user/findAll]}" onto public com.m.entity.UserVO com.m.controller.UserHandler.findAll(int,int)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:49 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/10/25-22:49 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2020/10/25-22:49 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2020/10/25-22:49 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020/10/25-22:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2020/10/25-22:49 [main] INFO  com.m.ServerApplication- Started ServerApplication in 19.216 seconds (JVM running for 24.054)
